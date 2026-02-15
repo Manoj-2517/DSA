@@ -1,3 +1,6 @@
+//Approach used: Dutch National Flag Algorithm , Three pointers approach(low,mid,high);
+//Time Complexity:O(n) for the mid pointer to traverse the Array upto mid<=high.
+//Space Complexity:O(1) no extra space used and sorting is done inplace.
 class Solution {
     public void sortColors(int[] nums) {
         int n = nums.length;
