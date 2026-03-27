@@ -14,12 +14,12 @@ class Solution {
         }
         return maxi;
     }
-    public int sumofele(int[] nums,int div,int k)
+    public int sumofele(int[] nums,int div)
     {
         int sum=0;
         for(int i=0;i<nums.length;i++)
         {
-            sum+=Math.ceil((double)(nums[i])/(double)(div));
+            sum+=(int)Math.ceil((double)(nums[i])/(double)(div));
         }
         return sum;
     }
@@ -28,7 +28,7 @@ class Solution {
         while(low<=high)
         {
             int mid=(low+high)/2;
-            if(sumofele(nums,mid,threshold)<=threshold)
+            if(sumofele(nums,mid)<=threshold)
             {
                 ans=mid;
                 high=mid-1;
